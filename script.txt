@@ -1,0 +1,26 @@
+
+## CLEAN AND INSTALL
+
+cd ./discovery-server && ./mvnw clean && ./mvnw install &&
+cd ../api-gateway && ./mvnw clean && ./mvnw install &&
+cd ../auth-service && ./mvnw clean && ./mvnw install &&
+cd ../user-service && ./mvnw clean && ./mvnw install &&
+cd ../posts-service && ./mvnw clean && ./mvnw install &&
+cd ../category-service && ./mvnw clean && ./mvnw install &&
+cd ../slider-service && ./mvnw clean && ./mvnw install &&
+cd ../
+
+
+##DOCKER BUILD
+cd ./discovery-server && docker build -t  mthuandkp/discovery-server:v1.1 -f Dockerfile.layered . &&
+cd ../api-gateway && docker build -t  mthuandkp/api-gateway:v1.1 -f Dockerfile.layered . &&
+cd ../auth-service && docker build -t  mthuandkp/auth-service:v1.1 -f Dockerfile.layered . &&
+cd ../user-service && docker build -t  mthuandkp/user-service:v1.1 -f Dockerfile.layered . &&
+cd ../posts-service && docker build -t  mthuandkp/posts-service:v1.1 -f Dockerfile.layered . &&
+cd ../category-service && docker build -t  mthuandkp/category-service:v1.1 -f Dockerfile.layered . &&
+cd ../slider-service && docker build -t  mthuandkp/slider-service:v1.1 -f Dockerfile.layered . &&
+cd ../
+
+cd ./posts-service && ./mvnw clean && ./mvnw install &&
+docker build -t  mthuandkp/posts-service:v1.1 -f Dockerfile.layered . &&
+cd ../

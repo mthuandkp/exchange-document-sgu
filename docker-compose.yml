@@ -1,0 +1,110 @@
+---
+version: '3.7'
+services:
+  ## Eureka Server
+  discovery-server:
+    image: mthuandkp/discovery-server:v1.2
+    container_name: discovery-server
+    ports:
+      - "8761:8761"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+
+  api-gateway:
+    container_name: api-gateway
+    image: mthuandkp/api-gateway:v1.2
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+
+
+  ## Auth-Service Docker Compose Config
+  auth-service:
+      container_name: auth-service
+      image: mthuandkp/auth-service:v1.2
+      ports:
+        - "8081:8081"
+      environment:
+        - SPRING_PROFILES_ACTIVE=docker
+      depends_on:
+        - discovery-server
+        - api-gateway
+
+
+  ## User-Service Docker Compose Config
+  user-service:
+    container_name: user-service
+    image: mthuandkp/user-service:v1.2
+    ports:
+      - "8082:8082"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      - discovery-server
+      - api-gateway
+
+  ## Auth-Service Docker Compose Config
+  category-service:
+    container_name: category-service
+    image: mthuandkp/category-service:v1.2
+    ports:
+      - "8083:8083"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      - discovery-server
+      - api-gateway
+
+  ## User-Service Docker Compose Config
+  posts-service:
+    container_name: posts-service
+    image: mthuandkp/posts-service:v1.2
+    ports:
+      - "8084:8084"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      - discovery-server
+      - api-gateway
+  ## User-Service Docker Compose Config
+  slider-service:
+    container_name: slider-service
+    image: mthuandkp/slider-service:v1.2
+    ports:
+      - "8085:8085"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      - discovery-server
+
+  ## User-Service Docker Compose Config
+  order-service:
+    container_name: order-service
+    image: mthuandkp/order-service:v1.2
+    ports:
+      - "8086:8086"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      - discovery-server
+
+  ## Report-Service Docker Compose Config
+  report-service:
+    container_name: report-service
+    image: mthuandkp/report-service:v1.2
+    ports:
+      - "8087:8087"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      - discovery-server
+  wishlist-service:
+    container_name: wishlist-service
+    image: mthuandkp/wishlist-service:v1.2
+    ports:
+      - "8088:8088"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      - discovery-server
