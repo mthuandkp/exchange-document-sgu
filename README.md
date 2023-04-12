@@ -14,11 +14,11 @@
     </tr>
     <tr>
       <td>3119410294</td>
-      <td>Võ Hoàng Quỳnh Như</td>    
+      <td>Võ Hoàng Quỳnh Như Front-end</td>    
     </tr>
     <tr>
       <td>3119560070</td>
-      <td>Phạm Nguyễn Minh Thuận</td>    
+      <td>Phạm Nguyễn Minh Thuận Back-end</td>    
     </tr>
   </table>
 </div>
@@ -109,26 +109,7 @@
     ●	Khoá/Mở khoá thành viên
     ●	Xem chi tiết, Tìm kiếm
   3.5 Quản lý hoá đơn:Xem
-  3.6 Thống kê báo cáo:
-    ●	Xem thống kê, báo cáo
-    ●	Xuất file
 
-```
-
-<!-- DATABASE -->
-
-### <div id='database'>Database</div>
-
-![database](/readmedocs/database.png)
-
-<!-- CONFIGURATION AND DEPENDENCY-->
-
-## <div id='install'>Install and Configuration</div>
-
-1. Clone code from github
-
-```sh
-git clone https://github.com/VoNhu2901/traodoitailieusgu.git
 ```
 
 <!-- BACKEND -->
@@ -137,31 +118,13 @@ git clone https://github.com/VoNhu2901/traodoitailieusgu.git
 
 <h4><i>Requirements :</i></h4>
 
-```sh
-1. PostgreSQL: https://www.postgresql.org/download/
-2. Java JDK 17: https://www.oracle.com/java/
-```
+1. Java JDK 17: https://www.oracle.com/java/
 
-<h4><i>Run project :</i></h4>
-
-```sh
-Tạo database với tên 'exchange' sau đó chạy project
-```
-
-<!-- FRONTEND -->
-
-### <div id='frontend'># Front End</div>
-
-<h4><i>Requirements :</i></h4>
-
-```sh
-1. Node Js: Node.js (nodejs.org)
-```
-
-<h4><i>Run project :</i></h4>
-
-```sh
-cd frontend
-npm install
-npm run dev     //mở localhost://3000
-```
+<h4><i>Technology :</i></h4>
+<ul>
+  <li>Java spring boot</li>
+  <li>Microservice</li>
+  <li>Restfull api</li>
+</ul>
+<h4><i>Architecture :</i></h4>
+<img width="583" alt="image" src="https://user-images.githubusercontent.com/87434092/231483883-6732eda5-c96e-4d2a-b5ea-41b6d1440605.png">
