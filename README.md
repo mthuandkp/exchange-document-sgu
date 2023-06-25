@@ -5,27 +5,9 @@
   <h5 align="center">GVHD: ThS.Nguyễn Thanh Sang</h5>
 </div>
 
-<div>
-<h5>Thành viên nhóm :</h5>
-  <table>
-    <tr>
-      <th>MSSV</th>
-      <th>Họ và tên</th>    
-    </tr>
-    <tr>
-      <td>3119410294</td>
-      <td>Võ Hoàng Quỳnh Như Front-end</td>    
-    </tr>
-    <tr>
-      <td>3119560070</td>
-      <td>Phạm Nguyễn Minh Thuận Back-end</td>    
-    </tr>
-  </table>
-</div>
-
 <h5>Introduce :</h5>
 
-    Website support students to exchange.
+    Website support students to exchange documents.
 
     Mentor: ThS.Nguyễn Thanh Sang
 
@@ -35,12 +17,17 @@
 
 ## Tentative technologies and frameworks
 
-- Java 17
-- Spring boot 3
-- Spring security 6
-- Node v16
-- NextJS 13
-- Tailwincss
+- Java
+- Spring boot
+- MongoDB
+- Microservice
+- Netflix Eureka
+- Spring Cloud Gateway
+- Docker
+- Cloudinary
+
+
+
 - Docker
 
 ## Table of Contents
