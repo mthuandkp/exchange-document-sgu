@@ -127,4 +127,5 @@
   <li>Restfull api</li>
 </ul>
 <h4><i>Architecture :</i></h4>
-<img width="583" alt="image" src="https://user-images.githubusercontent.com/87434092/231483883-6732eda5-c96e-4d2a-b5ea-41b6d1440605.png">
+<img width="531" alt="image" src="https://github.com/mthuandkp/exchange-document-sgu/assets/87434092/029f11fe-7414-47d3-9104-aafdcb09eb94">
+
