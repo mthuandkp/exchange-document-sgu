@@ -25,6 +25,7 @@
 - Spring Cloud Gateway
 - Docker
 - Cloudinary
+- Spring security
 
 
 
